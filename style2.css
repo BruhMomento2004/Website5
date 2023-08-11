@@ -1,0 +1,271 @@
+/* RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Nguyen Thanh Tung
+  ID: s3979489
+  Acknowledgement: https://www.fahasa.com/ ; https://tiki.vn/ ; 
+  https://www.amazon.com/ ; https://www.pbookshop.com/ ; https://issuu.com/ ;
+  https://www.canva.com/ ; https://www.worldbook.com/ ; https://www.goodreads.com/ ;
+  https://www.davidmcraney.com/howmindschangehome ; https://sachngoaingugiare.com/ ;
+  https://www.librariusbooks.com/ ; https://www.biblio.com/ ; https://www.ebay.com/ ;
+  https://www.hachette.co.uk/ ; https://www.penguin.com.au/ ; https://www.kobo.com/gb/en ;
+  https://en.wikipedia.org/wiki/Main_Page ; https://thecornerstonebookshop.com/ ; 
+  https://www.thebookshelf.vn/ ; https://fado.vn/ ; https://www.booktopia.com.au/ ;
+  https://fontawesome.com/; */
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(Logo/white-cloud-blue-sky_74190-7713-transformed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#check {
+  display: none;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    margin-left: 5% ;
+    margin-right: 5%;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.676);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 4em;
+}
+
+header{padding: 0 3%}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar {
+  background-color: ivory;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 20px; 
+  text-align: center;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+    background-color: goldenrod;
+}
+
+.breadcrumbs {
+    padding: 1em;
+}
+
+.br_items {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.br_link {
+    text-decoration: none;
+    color: black
+}
+
+.br_items:not(:last-of-type)::after {
+    content: '/';
+    margin: 0 2px;
+    Color: goldenrod;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.middle .smallbook img{
+    width: 100px;
+    height: 127px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+  display: none;
+}
+
+.Main_image{
+    padding: 0 3%;
+}
+
+.price{
+    font-size: 3em;
+    color: black;
+}
+
+.author{
+    font-size: 3em;
+    padding: 0 5%;
+    color: black;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.three{
+    font-size: 30px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+footer{
+    padding: 0 3%;
+}
+
+.bottom ul{
+  list-style-type: none;
+  background-color: ivory;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.bottom a{
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.bottom a:hover{
+  background-color: goldenrod;
+}
+
+.bottom li{
+    float: left
+}
+
+.copyright{
+  text-align: end;
+  font-size: 1em;
+  color: burlywood;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .middle {
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .sub-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .breadcrumbs{
+    font-size: 200%;
+  }
+
+  .hamburger {
+    padding: 2%;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    font-size: 3em;
+    justify-content: flex-end;
+  }
+
+  #check:checked ~ .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding: 0 2%;
+  }
+
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#check {
+  display: none;
+}
